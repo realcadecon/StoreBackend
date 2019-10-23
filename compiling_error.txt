@@ -1,0 +1,22 @@
+/Users/cadeconner/Documents/CSCE121/home/backendstore/Customer.cpp:24:25: error: implicit instantiation of undefined template 'std::__1::basic_ostringstream<char, std::__1::char_traits<char>, std::__1::allocator<char> >'
+          ostringstream oss;
+                        ^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/iosfwd:123:32: note: template is declared here
+    class _LIBCPP_TEMPLATE_VIS basic_ostringstream;
+                               ^
+/Users/cadeconner/Documents/CSCE121/home/backendstore/Customer.cpp:74:47: error: array type 'char [100]' is not assignable
+                         productsPurchased[r] = *product.getName();
+                         ~~~~~~~~~~~~~~~~~~~~ ^
+/Users/cadeconner/Documents/CSCE121/home/backendstore/Customer.cpp:76:47: error: array type 'char [100]' is not assignable
+                         productsPurchased[r] = productsPurchased[r-1];
+                         ~~~~~~~~~~~~~~~~~~~~ ^
+/Users/cadeconner/Documents/CSCE121/home/backendstore/Customer.cpp:83:16: error: out-of-line definition of 'outputRecentPurchases' does not match any declaration in 'Customer'
+void Customer::outputRecentPurchases(std::ostream& os, const Customer& customer) const {
+               ^~~~~~~~~~~~~~~~~~~~~
+/Users/cadeconner/Documents/CSCE121/home/backendstore/Customer.cpp:88:6: error: void function 'outputRecentPurchases' should not return a value [-Wreturn-type]
+     return os;
+     ^      ~~
+/Users/cadeconner/Documents/CSCE121/home/backendstore/Customer.cpp:90:1: error: extraneous closing brace ('}')
+}
+^
+6 errors generated.
